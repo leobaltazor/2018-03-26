@@ -4,6 +4,7 @@
   "description": "first",
   "main": "index.js",
   "scripts": {
+		"nodemon": "node ./node_modules/nodemon/bin/nodemon.js index.js",
     "test": "*"
   },
   "repository": {

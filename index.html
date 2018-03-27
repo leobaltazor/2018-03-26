@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Моё Node-приложение!</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<style>
+		body { padding-top:20px; }
+	</style>
+</head>
+<body class="container">
+	
+	<div class="jumbotron">
+		<h1>Мой чат</h1>
+		<form action="/send-message" name="send-message" method="post">
+			<input type="text" name="message">
+			<input type="submit" value="Отправить" target="get-message">
+		</form>
+	</div>
+	
+	<iframe src="/get-message" frameborder="0" width="500px" height="100px" frameborder="1" name="get-message" id="get-message"></iframe>
+</body>
+</html>
